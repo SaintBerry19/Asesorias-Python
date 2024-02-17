@@ -19,3 +19,19 @@ for _ in range(n):
 alumno = input()
 promedio_redondeado = round(sum(calificaciones_estudiantes[alumno])/len(calificaciones_estudiantes[alumno]),2)
 print(f"{promedio_redondeado:.2f}")
+
+# # Usando solo arrays
+n = int(input())
+calificaciones_estudiantes = []
+
+for _ in range(n):
+    nombre,*calificaciones_string = input().split()
+    calificaciones = list(map(float,calificaciones_string))
+    calificaciones_estudiantes.append([nombre,calificaciones])
+    
+alumno = input()
+for nombre,calificaciones in calificaciones_estudiantes:
+    if nombre == alumno:
+        promedio_redondeado = round(sum(calificaciones)/len(calificaciones),2)
+print(f"{promedio_redondeado:.2f}")
+
