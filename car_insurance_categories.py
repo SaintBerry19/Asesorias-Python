@@ -48,9 +48,9 @@ else:
 
 if antiguedad > 5:
     if paquete == "rojo":
-        paquete == "naranja"
+        paquete = "naranja"
     elif paquete == "naranja":
-        paquete == "azul"
+        paquete = "azul"
     elif paquete == "azul":
         paquete = "verde"
 
