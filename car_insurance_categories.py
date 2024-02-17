@@ -19,18 +19,20 @@
 # Ask a user for his age, his driving license age, his seniority in the insurance and his
 # number of accidents.
 # Give the proper insurance offer to the user.
+
 edad = int(input("¿Cual es tu edad?"))
 licencia = int(input("¿Cuanto tienes con tu licencia"))
 accidentes = int(input("¿Cuantos accidentes has sufrido?"))
 antiguedad = int(input("¿Cuanto tienes en la empresa?"))
 
-paquete = ""
-
-if edad < 25 and licencia < 2 and accidentes < 1:
-    paquete = "rojo"
-
-elif edad < 25 and licencia > 2 and accidentes < 1:
-    paquete = "naranja"
+if edad < 25:
+    if licencia < 2 and accidentes < 1:
+        paquete = "rojo"
+    elif licencia > 2 and accidentes < 1:
+        paquete = "naranja"
+    else:
+        print("No hay paquete para ti!")
+        exit()
 
 elif edad > 25 and licencia > 2:
 
@@ -55,3 +57,42 @@ if antiguedad > 5:
         paquete = "verde"
 
 print(f"Perteneces a la categoria {paquete}")
+
+# Usando una funcion
+# def verificador_paquete(edad, licencia, accidentes, antiguedad):
+#     if edad < 25:
+#         if licencia < 2 and accidentes < 1:
+#             paquete = "rojo"
+#         elif licencia > 2 and accidentes < 1:
+#             paquete = "naranja"
+#         else:
+#             return ("N/A")
+
+#     elif edad > 25 and licencia > 2:
+#         if accidentes == 0:
+#             paquete = "azul"
+#         elif accidentes == 1:
+#             paquete = "naranja"
+#         elif 1 < accidentes:
+#             paquete = "rojo"
+#     else:
+#         return ("N/A")
+
+#     if antiguedad > 5:
+#         if paquete == "rojo":
+#             paquete = "naranja"
+#         elif paquete == "naranja":
+#             paquete = "azul"
+#         elif paquete == "azul":
+#             paquete = "verde"
+    
+#     return paquete
+
+
+# edad = int(input("¿Cual es tu edad?"))
+# licencia = int(input("¿Cuanto tienes con tu licencia"))
+# accidentes = int(input("¿Cuantos accidentes has sufrido?"))
+# antiguedad = int(input("¿Cuanto tienes en la empresa?"))
+
+# paquete = verificador_paquete(edad, licencia, accidentes, antiguedad)
+# print(f"Perteneces a la categoria {paquete}")
