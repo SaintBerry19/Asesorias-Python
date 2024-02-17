@@ -17,7 +17,7 @@ print(False and False)
 #                           entonces
 #                     ELSE: (SI NINGUNA DE LAS ANTERIORES)
 #                           entonces
-# Los operados condicionales son los siguientes, ==,<=,>=,!=,NOT, AND, OR, IN.
+# Los operados condicionales/logicos son los siguientes, ==,<=,>=,!=,NOT, AND, OR, IN.
 print("")
 print("Uso de condicionales")
 nombre = input("Dime tu nombre: ")
