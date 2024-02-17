@@ -35,13 +35,10 @@ if edad < 25:
         exit()
 
 elif edad > 25 and licencia > 2:
-
     if accidentes == 0:
         paquete = "azul"
-
     elif accidentes == 1:
         paquete = "naranja"
-
     elif 1 < accidentes:
         paquete = "rojo"
 else:
@@ -85,7 +82,7 @@ print(f"Perteneces a la categoria {paquete}")
 #             paquete = "azul"
 #         elif paquete == "azul":
 #             paquete = "verde"
-    
+
 #     return paquete
 
 
