@@ -47,52 +47,31 @@ print(oracion[::3])
 # Puedes usar notaciones negativas y saltos negativos para voltear strings. Nota: para la indexacion negativa el ultimo elemento SI ES -1 no -0.
 print(oracion[-4:])
 nombre = "aroM otreboR"
-print(nombre[::-1])
-# Los string tienen varios metodos incluidos en su clase, una clase es una agrupcion de objetos con las mismas caracteristicas.
-# Los metodos son funciones pertenecientes a una clase, siendo que una funcion es una agrupacion de codigo.
-# El metodo index siempre te dira la primera ocurrencia.
-print(oracion.index("v"))
+print(nombre)
+nombre = nombre[::-1]
+print(nombre)
+print(oracion)
+oracion = oracion[0:14] + nombre + oracion[18:]
+# oracion = oracion.replace("Juan",nombre)
+print(oracion)
 
-# NOTA IMPORTANTE Pequenia explicacion de la diferencia de una funcion y un metodo,
-# Esto es una funcion y se accede de la siguiente manera:
-# def index_2(oracion):
-#     for i in range(0, len(oracion)):
-#         if oracion[i] == "v":
-#             return i
-#     return -1 # Retorna -1 si no se encuentra la letra "v"
+# Tipo de dato int, datos numericos enteros y dato float numeros decimales
+numero_1 = 3.65
+numero_2 = 4
+print(type(numero_1))
+print(type(numero_2))
+# numero = float(input("Dame un numero: "))
+# print(numero)
+# Operadores, + suma,- resta,/ division,* multiplicaciones,** exponente, % modulo , // division solo entero
+#x(operador)= 4  ---> x = x (operador) 4
+x = 109
+x += 1
+print(x)
 
-# indice = index_2(oracion)
-# print(indice)
-
-# # Esto es una clase y se accede de la siguiente manera:
-# class Palabra:
-#     def __init__(self, oracion):
-#         self.oracion = oracion
-
-#     def index_2(self):
-#         for i in range(0, len(self.oracion)):
-#             if self.oracion[i] == "v":
-#                 return i
-#         return -1  # Retorna -1 si no se encuentra la letra "v"
-
-# mi_palabra = Palabra(oracion)
-# indice_v = mi_palabra.index_2()
-# print(f"El índice de la primera 'v' es: {indice_v}")
-
-# Trucos del print
-print(
-    f"Esta manera de imprimir nos permite meter variables dentro de una cadena de caracteres {oracion} Me llamo {nombre[::-1]}"
-)
-print(
-    "Esta manera de imprimir nos permite meter variables dentro de una cadena de caracteres",
-    oracion,
-    "Me llamo",
-    nombre[::-1],
-)
-print(
-    f"""Esta manera de imprimir nos permite 
-meter variables dentro de una 
-cadena de caracteres {oracion} 
-Me llamo {nombre[::-1]}
-"""
-)
+# Tipo booleanos
+verdad = True
+falso = False
+nulo = None 
+print(verdad)
+print(falso)
+print(nulo)
