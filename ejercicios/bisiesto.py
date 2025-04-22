@@ -5,7 +5,7 @@
 # Si un año es divisible por 4 y por 100 y por 400, entonces sí es bisiesto.
 anio=int(input("Dame un año para verificar si es bisiesto: "))
 print("")
-print("Metodo 1")
+print("Metodo 1 - OP")
 if( anio % 4 == 0 and anio % 100 != 0) or anio % 400 == 0:
     print ("El año es bisiesto")
 else:
@@ -15,7 +15,7 @@ else:
 # Si un año es divisible por 100, no es bisiesto, a menos que:
 # Si un año es divisible por 400, entonces sí es bisiesto.
 print("")
-print("Metodo 2")
+print("Metodo 2 - Le sabe")
 if anio % 400 == 0: 
     print("el anio si es bisiesto")
 elif anio % 100 == 0: # anio no es divisible entre 400 porque no entraste al primer if
@@ -29,7 +29,7 @@ else: print("no es bisiesto")
 # Si un año es divisible por 100, no es bisiesto, a menos que:
 # Si un año es divisible por 400, entonces sí es bisiesto.
 print("")
-print("Metodo 3")
+print("Metodo 3 - Please NO")
 # Lineal/directa
 if anio % 4 == 0: # Eres divisible entre 4?
     # Soy divisible entre 4
@@ -47,7 +47,7 @@ else: # No soy divisible entre 4
 # Si un año es divisible por 100, no es bisiesto, a menos que:
 # Si un año es divisible por 400, entonces sí es bisiesto.
 print("")
-print("Metodo 4")
+print("Metodo 4 - Noob Friendly Pero Va Bien")
 if anio % 4 == 0 and anio % 100 == 0 and anio % 400 ==0:
     print("Bisiesto")
 elif anio % 4 == 0 and anio % 100 == 0 and anio % 400 !=0 :
