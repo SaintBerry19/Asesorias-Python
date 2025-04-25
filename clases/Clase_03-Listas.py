@@ -27,7 +27,7 @@ for elemento in lista:
 print("")
 print("Listas son mutables")
 for iterador in range(len(lista)):
-    lista[iterador] = 2
+    lista[iterador] = 2 + iterador
 print(lista)
 
 # # Listas
