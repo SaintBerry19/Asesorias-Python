@@ -63,3 +63,6 @@ print(lista)
 #     print("O el numero esta en la lista inicial o el se llama Amaya")
 # else:
 #     print("No es Amaya y el numero no esta en lista")
+
+# Metodo Index
+# .index(valor_a_buscar) ---> regresa el indice del elemento que haga match con el valor, el primero.

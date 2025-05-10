@@ -1,0 +1,10 @@
+{
+    "nombre": "Roberto",
+    "edad": 29,
+    "ciudades_visitadas": [
+        "Monterrey",
+        "Guadalajara",
+        "CDMX"
+    ],
+    "activo": true
+}
